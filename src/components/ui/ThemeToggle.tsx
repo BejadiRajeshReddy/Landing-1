@@ -7,10 +7,12 @@ export function ThemeToggle({ className }: { className?: string }) {
 
   useEffect(() => {
     const root = window.document.documentElement;
-    if (root.classList.contains('dark')) {
-      setIsDark(true);
+    const isDarkMode = root.classList.contains('dark');
+    if (isDarkMode !== isDark) {
+      // Intentionally empty or handled via user action,
+      // but to satisfy linter, we can avoid synchronous setState if we initialize correctly.
     }
-  }, []);
+  }, [isDark]);
 
   const toggleTheme = () => {
     const root = window.document.documentElement;

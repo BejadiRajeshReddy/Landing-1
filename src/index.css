@@ -20,9 +20,9 @@
   }
 
   .dark {
-    --color-canvas: 15 23 42;
-    --color-surface: 30 41 59;
-    --color-border: 51 65 85;
+    --color-canvas: 11 15 25;
+    --color-surface: 23 30 46;
+    --color-border: 41 53 78;
     --color-primary: 255 255 255;
     --color-primary-text: 8 8 8;
     --color-text-strong: 248 250 252;

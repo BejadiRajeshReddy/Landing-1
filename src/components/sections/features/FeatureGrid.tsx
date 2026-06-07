@@ -1,4 +1,3 @@
-import { cn } from '../../../utils/cn';
 import { features } from '../../../data/mockData';
 import { FeatureCard } from './FeatureCard';
 import { SectionEyebrow } from '../../foundation/SectionEyebrow';
@@ -17,14 +16,11 @@ export function FeatureGrid() {
           </SectionSubcopy>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature, idx) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {features.map((feature) => (
             <FeatureCard
               key={feature.id}
               feature={feature}
-              className={cn(
-                idx === 0 || idx === 3 ? "lg:col-span-2" : "lg:col-span-1"
-              )}
             />
           ))}
         </div>
