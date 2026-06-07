@@ -10,7 +10,7 @@ interface TestimonialSectionProps {
 
 export function TestimonialSection({ className }: TestimonialSectionProps) {
   return (
-    <section className={cn("py-24 bg-surface border-y border-border", className)}>
+    <section className={cn("py-32 bg-surface border-y border-border", className)}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <SectionEyebrow>Early Access Partners</SectionEyebrow>

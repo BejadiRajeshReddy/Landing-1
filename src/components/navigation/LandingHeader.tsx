@@ -5,6 +5,7 @@ import { HeaderCTAGroup } from '../ui/HeaderCTAGroup';
 import { navigationLinks } from '../../data/mockData';
 import { HeaderNavLink } from './HeaderNavLink';
 import { MobileMenuDrawer } from './MobileMenuDrawer';
+import { ThemeToggle } from '../ui/ThemeToggle';
 
 export function LandingHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,7 +45,8 @@ export function LandingHeader() {
             ))}
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-4">
+            <ThemeToggle />
             <HeaderCTAGroup />
           </div>
 
